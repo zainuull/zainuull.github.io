@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,200&display=swap" rel="stylesheet" />
+  </head>
+  <body class="font-nunito">
+    <!-- Intro Start -->
+    <div class="relative h-screen overflow-hidden bg-gradient-to-t from-indigo-200 dark:from-slate-800 dark:to-slate-500">
+      <!-- Intro End -->
+
+      <!-- Navbar Start -->
+      <nav class="fixed top-0 z-10 w-full bg-white dark:bg-darken">
+        <div class="container mx-auto flex items-center justify-between px-3 py-5">
+          <div class="flex items-center gap-2">
+            <img src="../img/logo.png" alt="logo" class="w-8 rounded-full" />
+            <span class="text-md text-primary">portfolio</span>
+          </div>
+          <ul class="hidden space-x-10 text-sm font-bold uppercase text-darken md:flex dark:text-white">
+            <li class="hover:text-gray-400">
+              <a href="#">Home</a>
+            </li>
+            <li class="hover:text-gray-400">
+              <a href="#about">About</a>
+            </li>
+            <li class="hover:text-gray-400">
+              <a href="#service">Service</a>
+            </li>
+            <li class="hover:text-gray-400">
+              <a href="#portfolio">Porrtfolio</a>
+            </li>
+            <li class="hover:text-gray-400">
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+          <span id="moon" class="hidden cursor-pointer text-3xl md:block">🌙</span>
+          <div id="hamburger" class="z-10 mr-4 cursor-pointer space-y-1 md:hidden">
+            <div class="h-0.5 w-5 bg-black"></div>
+            <div class="h-0.5 w-5 bg-black"></div>
+            <div class="h-0.5 w-5 bg-black"></div>
+          </div>
+          <ul id="menu" class="absolute top-0 left-0 hidden w-full space-y-5 rounded-b-2xl bg-primary p-10 text-center text-white">
+            <li class="hover:text-gray-400">
+              <a id="hlink" href="#">Home</a>
+            </li>
+            <li class="hover:text-gray-400">
+              <a id="hlink" href="#about">About</a>
+            </li>
+            <li class="hover:text-gray-400">
+              <a id="hlink" href="#service">Service</a>
+            </li>
+            <li class="hover:text-gray-400">
+              <a id="hlink" href="#portfolio">Porrtfolio</a>
+            </li>
+            <li class="hover:text-gray-400">
+              <a id="hlink" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Navbar End -->
+
+      <!-- Intro Content Start -->
+      <!-- Img -->
+      <img src="../img/avatar.png" alt="man" class="absolute bottom-0 right-0 mx-auto h-5/6 object-cover lg:left-0" />
+      <!-- Circle -->
+      <div class="absolute -bottom-1/4 left-0 right-0 -z-10 mx-auto hidden h-big w-big rounded-full bg-indigo-900 lg:block"></div>
+      <!-- Animate -->
+      <div class="absolute top-1/4 left-3 text-4xl font-bold md:left-16 md:text-5xl lg:top-1/3 lg:left-11 lg:text-7xl">
+        <span class="text-secondary dark:text-slate-200">Freelance</span>
+        <p id="text" class="text-red-500"></p>
+      </div>
+      <!-- Text -->
+      <div class="absolute top-0 bottom-0 right-10 m-auto hidden h-fit w-1/3 flex-col gap-5 rounded-xl bg-white p-6 shadow-xl lg:flex dark:bg-slate-200">
+        <h1 class="text-4xl font-bold text-primary">Hi, im Zainul</h1>
+        <p class="text-gray-500 dark:text-darken">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem amet ex ullam deleniti sapiente at facilis veniam eos quisquam dolor.</p>
+        <a href="#contact" class="w-36 rounded-lg bg-primary p-3 text-center font-semibold text-white transition duration-300 ease-in-out hover:bg-indigo-600">Hire Me !</a>
+      </div>
+    </div>
+    <!-- Intro Content End -->
+
+    <!-- About Start -->
+    <section id="about" class="py-10 px-10 dark:bg-darken">
+      <div class="container mx-auto flex flex-col-reverse items-center gap-20 py-20 lg:flex-row">
+        <!-- Left -->
+        <div class="relative">
+          <img class="absolute top-0 left-0 -z-10 h-1/4" src="../img/dots.png" alt="" />
+          <div class="h-full overflow-hidden rounded-full">
+            <img src="../img/avatar2.jpg" alt="" />
+          </div>
+        </div>
+
+        <!-- Right -->
+        <div class="my-auto flex flex-col gap-3">
+          <h1 class="font-bold uppercase text-primary">About Me</h1>
+          <h1 class="text-2xl font-semibold dark:text-slate-200">The more you learn</h1>
+          <h1 class="text-2xl font-semibold dark:text-slate-200">The more you earn</h1>
+          <p class="w-4/5 text-secondary dark:text-slate-200">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque esse tempora eaque beatae animi voluptatibus saepe impedit quisquam odit eligendi.</p>
+          <h2 class="font-semibold uppercase dark:text-slate-200">Html</h2>
+          <div class="h-1 w-full rounded-md bg-gray-400">
+            <div class="h-1 w-4/5 rounded-md bg-indigo-800"></div>
+          </div>
+          <h2 class="font-semibold uppercase dark:text-slate-200">Tailwind</h2>
+          <div class="h-1 w-full rounded-md bg-gray-400">
+            <div class="h-1 w-3/4 rounded-md bg-indigo-800"></div>
+          </div>
+          <h2 class="font-semibold uppercase dark:text-slate-200">Javascript</h2>
+          <div class="h-1 w-full rounded-md bg-gray-400">
+            <div class="h-1 w-3/5 rounded-md bg-indigo-800"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About End -->
+
+    <!-- Service Start -->
+    <section id="service" class="py-10 px-10 dark:bg-darken">
+      <div class="container mx-auto">
+        <!-- Top -->
+        <div class="flex flex-col items-center">
+          <h1 class="font-bold uppercase text-primary">Service</h1>
+          <h1 class="text-2xl font-bold text-darken dark:text-white">What do I offer ?</h1>
+          <p class="text-center text-xl font-medium text-secondary dark:text-slate-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, veritatis.</p>
+        </div>
+        <!-- Bottom -->
+        <div class="flex flex-wrap justify-around py-10 lg:p-10">
+          <div class="my-5 flex flex-col gap-4 rounded-xl border p-6 shadow-lg md:w-1/3 dark:bg-slate-700">
+            <img src="../img/icon.png" alt="icon" class="w-10" />
+            <h1 class="text-md font-bold dark:text-white">UI / UX DESIGN</h1>
+            <p class="text-secondary dark:text-slate-200">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, praesentium?</p>
+            <a href="#" class="font-bold text-primary hover:text-indigo-500 dark:text-indigo-500 dark:hover:text-primary">Read More</a>
+          </div>
+          <div class="my-5 flex flex-col gap-4 rounded-xl border p-6 shadow-lg md:w-1/3 dark:bg-slate-700">
+            <img src="../img/icon.png" alt="icon" class="w-10" />
+            <h1 class="text-md font-bold dark:text-white">UI / UX DESIGN</h1>
+            <p class="text-secondary dark:text-slate-200">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, praesentium?</p>
+            <a href="#" class="font-bold text-primary hover:text-indigo-500 dark:text-indigo-500 dark:hover:text-primary">Read More</a>
+          </div>
+          <div class="my-5 flex flex-col gap-4 rounded-xl border p-6 shadow-lg md:w-1/3 dark:bg-slate-700">
+            <img src="../img/icon.png" alt="icon" class="w-10" />
+            <h1 class="text-md font-bold dark:text-white">UI / UX DESIGN</h1>
+            <p class="text-secondary dark:text-slate-200">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, praesentium?</p>
+            <a href="#" class="font-bold text-primary hover:text-indigo-500 dark:text-indigo-500 dark:hover:text-primary">Read More</a>
+          </div>
+          <div class="my-5 flex flex-col gap-4 rounded-xl border p-6 shadow-lg md:w-1/3 dark:bg-slate-700">
+            <img src="../img/icon.png" alt="icon" class="w-10" />
+            <h1 class="text-md font-bold dark:text-white">UI / UX DESIGN</h1>
+            <p class="text-secondary dark:text-slate-200">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, praesentium?</p>
+            <a href="#" class="font-bold text-primary hover:text-indigo-500 dark:text-indigo-500 dark:hover:text-primary">Read More</a>
+          </div>
+          <div class="my-5 flex flex-col gap-4 rounded-xl border p-6 shadow-lg md:w-1/3 dark:bg-slate-700">
+            <img src="../img/icon.png" alt="icon" class="w-10" />
+            <h1 class="text-md font-bold dark:text-white">UI / UX DESIGN</h1>
+            <p class="text-secondary dark:text-slate-200">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, praesentium?</p>
+            <a href="#" class="font-bold text-primary hover:text-indigo-500 dark:text-indigo-500 dark:hover:text-primary">Read More</a>
+          </div>
+          <div class="my-5 flex flex-col gap-4 rounded-xl border p-6 shadow-lg md:w-1/3 dark:bg-slate-700">
+            <img src="../img/icon.png" alt="icon" class="w-10" />
+            <h1 class="text-md font-bold dark:text-white">UI / UX DESIGN</h1>
+            <p class="text-secondary dark:text-slate-200">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, praesentium?</p>
+            <a href="#" class="font-bold text-primary hover:text-indigo-500 dark:text-indigo-500 dark:hover:text-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Service End -->
+
+    <!-- Portfolio Start -->
+    <section id="portfolio" class="py-10 px-10 dark:bg-darken">
+      <div class="container mx-auto">
+        <!-- Top -->
+        <div class="flex flex-col items-center">
+          <h1 class="font-bold uppercase text-primary">Portfolio</h1>
+          <h1 class="text-2xl font-bold text-darken dark:text-white">Works & Projects</h1>
+          <p class="text-center text-xl font-medium text-secondary dark:text-slate-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, veritatis.</p>
+        </div>
+        <!-- Bottom -->
+        <div class="flex flex-wrap justify-evenly py-10 lg:p-10">
+          <div class="m-1 my-5 rounded-xl border p-6 shadow-lg md:w-1/5">
+            <img src="../img/item.png" alt="" />
+          </div>
+          <div class="m-1 my-5 rounded-xl border p-6 shadow-lg md:w-1/5">
+            <img src="../img/item.png" alt="" />
+          </div>
+          <div class="m-1 my-5 rounded-xl border p-6 shadow-lg md:w-1/5">
+            <img src="../img/item.png" alt="" />
+          </div>
+          <div class="m-1 my-5 rounded-xl border p-6 shadow-lg md:w-1/5">
+            <img src="../img/item.png" alt="" />
+          </div>
+          <div class="m-1 my-5 rounded-xl border p-6 shadow-lg md:w-1/5">
+            <img src="../img/item.png" alt="" />
+          </div>
+          <div class="m-1 my-5 rounded-xl border p-6 shadow-lg md:w-1/5">
+            <img src="../img/item.png" alt="" />
+          </div>
+          <div class="m-1 my-5 rounded-xl border p-6 shadow-lg md:w-1/5">
+            <img src="../img/item.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio End -->
+
+    <!-- Contact Start -->
+    <section id="contact" class="py-10 px-10 dark:bg-darken">
+      <div class="container">
+        <!-- Top -->
+        <div class="flex flex-col items-center">
+          <h1 class="font-bold uppercase text-primary">Contact</h1>
+          <h1 class="text-2xl font-bold text-darken dark:text-white">Have Question ?</h1>
+          <p class="text-xl font-medium text-secondary dark:text-slate-200">Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <!-- Bottom -->
+        <form action="" class="mt-5 flex flex-col items-center gap-5 lg:mt-0 lg:p-10">
+          <input type="text" placeholder="Your name" class="w-full rounded-md p-2 outline-none ring-1 ring-primary lg:w-1/2" />
+          <input type="mail" placeholder="Your email" class="w-full rounded-md p-2 outline-none ring-1 ring-primary lg:w-1/2" />
+          <textarea name="message" id="" cols="30" rows="10" placeholder="Message" class="w-full rounded-md outline-none ring-1 ring-primary lg:w-1/2"></textarea>
+          <button class="w-36 cursor-pointer rounded-lg bg-primary p-3 font-bold text-white hover:bg-indigo-600">Send</button>
+        </form>
+      </div>
+    </section>
+    <!-- Contact End -->
+
+    <!-- Footer Start -->
+    <div class="w-full bg-primary">
+      <div class="container mx-auto flex items-center justify-between px-3 py-5">
+        <div class="flex items-center gap-2">
+          <img src="../img/logo.png" alt="logo" class="w-8 rounded-full" />
+          <span class="text-md text-primary">portfolio</span>
+        </div>
+        <p class="text-white">2023 portfolio build with <a href="wwww.insatgram.com/zainuull_" class="">zainul❤️</a></p>
+        <div id="hamburger" class="z-10 mr-4 cursor-pointer space-y-1 md:hidden">
+          <div class="h-0.5 w-5 bg-black"></div>
+          <div class="h-0.5 w-5 bg-black"></div>
+          <div class="h-0.5 w-5 bg-black"></div>
+        </div>
+        <div class="flex gap-8">
+          <img class="w-6 rounded-full bg-white" src="../img//instagram.svg" alt="" />
+          <img class="w-6 rounded-full bg-white" src="../img//whatsapp.svg" alt="" />
+          <img class="w-6 rounded-full bg-white" src="../img//linkedin.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <script src="js/script.js"></script>
+    <script src="js/autotyping.js"></script>
+  </body>
+</html>
